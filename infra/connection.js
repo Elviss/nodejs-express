@@ -1,11 +1,14 @@
 console.log('Starting server...');
 
 import mysql from "mysql2"
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const connection = mysql.createConnection({
     host: 'localhost',
-    user: 'admin',
-    password: 'admin',
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
     database: 'node-express',
 })
 
