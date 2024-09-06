@@ -1,0 +1,30 @@
+### GET request to example server
+GET localhost:3000/selecoes
+
+###
+
+GET localhost:3000/selecoes/1
+
+###
+
+POST localhost:3000/selecoes
+Content-Type: application/json
+
+{
+  "selecao": "Mexico",
+  "grupo": "C"
+}
+
+###
+
+DELETE localhost:3000/selecoes/1
+
+###
+
+PUT localhost:3000/selecoes/2
+Content-Type: application/json
+
+{
+  "selecao": "Holanda",
+  "grupo": "A"
+}
