@@ -41,7 +41,6 @@ app.get('/selecoes/:id', (req, res) => {
 });
 
 app.post('/selecoes', (req, res) => {
-
     const selecao = req.body;
     const sql = "INSERT INTO selecoes SET ?";
 
@@ -57,7 +56,6 @@ app.post('/selecoes', (req, res) => {
 });
 
 app.delete('/selecoes/:id', (req, res) => {
-
     const id = req.params.id;
     const sql = "DELETE FROM selecoes WHERE id = ?";
 
@@ -72,7 +70,6 @@ app.delete('/selecoes/:id', (req, res) => {
 });
 
 app.put('/selecoes/:id', (req, res) => {
-
     const id = req.params.id;
     const selecao = req.body;
     const sql = "UPDATE selecoes SET ? WHERE id = ?";
