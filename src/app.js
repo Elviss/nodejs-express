@@ -1,5 +1,5 @@
 import express from 'express'
-import connection from "../infra/connection.js";
+import connection from "./app/database/connection.js";
 const app = express()
 app.use(express.json())
 
