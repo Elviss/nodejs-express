@@ -4,7 +4,10 @@ New project of API using Node.js and Express.js
 
 This project contains a RESTFul API in Node.js with Express.Js where you can do all the CRUD operations in a data collection.
 
-Uou can use this API as shown bellow:
+With the server running you can use the api.http file to call the API and test each method.
+
+
+The methods available are described bellow:
 
 **Fetch all the available soccer teams:**
 
